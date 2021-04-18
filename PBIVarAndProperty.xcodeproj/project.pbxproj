@@ -16,6 +16,7 @@
 		55884583262C40F600C0B312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55884582262C40F600C0B312 /* main.m */; };
 		5588458D262C40F700C0B312 /* PBIVarAndPropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5588458C262C40F700C0B312 /* PBIVarAndPropertyTests.m */; };
 		55884598262C40F700C0B312 /* PBIVarAndPropertyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55884597262C40F700C0B312 /* PBIVarAndPropertyUITests.m */; };
+		558845AA262C44BC00C0B312 /* ViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 558845A9262C44BC00C0B312 /* ViewController+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		55884593262C40F700C0B312 /* PBIVarAndPropertyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBIVarAndPropertyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55884597262C40F700C0B312 /* PBIVarAndPropertyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBIVarAndPropertyUITests.m; sourceTree = "<group>"; };
 		55884599262C40F700C0B312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558845A8262C44BC00C0B312 /* ViewController+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+Category.h"; sourceTree = "<group>"; };
+		558845A9262C44BC00C0B312 /* ViewController+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				5588457E262C40F600C0B312 /* LaunchScreen.storyboard */,
 				55884581262C40F600C0B312 /* Info.plist */,
 				55884582262C40F600C0B312 /* main.m */,
+				558845A8262C44BC00C0B312 /* ViewController+Category.h */,
+				558845A9262C44BC00C0B312 /* ViewController+Category.m */,
 			);
 			path = PBIVarAndProperty;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				55884578262C40F600C0B312 /* ViewController.m in Sources */,
 				55884572262C40F600C0B312 /* AppDelegate.m in Sources */,
 				55884583262C40F600C0B312 /* main.m in Sources */,
+				558845AA262C44BC00C0B312 /* ViewController+Category.m in Sources */,
 				55884575262C40F600C0B312 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

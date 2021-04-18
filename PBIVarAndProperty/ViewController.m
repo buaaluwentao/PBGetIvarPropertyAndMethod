@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import <objc/runtime.h>
+#import "ViewController+Category.h"
 
 @interface ViewController ()
 @property (nonatomic, copy) NSString *name;
@@ -19,8 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self ivars];
-    [self methods];
+    [self ivars];
+//    [self properties];
+//    [self methods];
 }
 
 - (void)ivars {
@@ -32,7 +34,7 @@
     }
 }
 
-- (void)methods {
+- (void)properties {
     unsigned int count = 0;
     objc_property_t *ivarList = class_copyPropertyList(self.class, &count);
     for (unsigned int i = 0; i < count; i++) {
@@ -41,5 +43,15 @@
     }
 }
 
+
+- (void)methods {
+    unsigned int count = 0;
+    Method *method = class_copyMethodList(self.class, &count);
+    for (unsigned int i = 0; i < count; i++) {
+        SEL methodName = method_getName(method[i]);
+        const char *selName = sel_getName(methodName);
+        NSLog(@"%@", [NSString stringWithCString:selName encoding:NSUTF8StringEncoding]);
+    }
+}
 
 @end
